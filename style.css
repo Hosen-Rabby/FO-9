@@ -28,41 +28,42 @@ p {
   margin: 0;
 }
 
+.dev{
+color: var(--yellow);}
 #preloader {
-    background: #fff url("../img/Triangles\ indicator.gif") no-repeat center
-      center;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    background-size: 5.5%;
-    z-index: 999;
-  }
-  
+  background: #fff url("../img/Triangles\ indicator.gif") no-repeat center
+    center;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-size: 5.5%;
+  z-index: 999;
+}
 
-  .to_top {
-    background-color: var(--yellow);
-    border: none;
-    color: white;
-    position: fixed;
-    bottom: 40px;
-    right: 30px;
-    border-radius: 5px;
-    cursor: pointer;
-    outline: none;
-    display: none;
-    transition: 0.4s ease-in-out;
-    text-align: center;
-    opacity: 0.8;
-  }
-  
-  .to_top i {
-    font-size: 30px;
-    padding: 0px 10px 5px 10px;
-  }
-  
-  .to_top:hover {
-    transform: scale(1.05) translateY(-5px);
-  }
+.to_top {
+  background-color: var(--yellow);
+  border: none;
+  color: white;
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  display: none;
+  transition: 0.4s ease-in-out;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.to_top i {
+  font-size: 30px;
+  padding: 0px 10px 5px 10px;
+}
+
+.to_top:hover {
+  transform: scale(1.05) translateY(-5px);
+}
 .navbar-toggler-icon {
   display: block;
   width: 40px;
@@ -218,15 +219,15 @@ nav ul li a:hover:after {
 
 /* experience */
 #experience {
-    background: url(assets/img/exp2.jpg) center no-repeat;
-    background-size: cover;
+  background: url(assets/img/exp2.jpg) center no-repeat;
+  background-size: cover;
 }
-#experience .title{
-    margin-bottom: 20px;
+#experience .title {
+  margin-bottom: 20px;
 }
-#experience .exp_overlay{
-background-color: rgba(255, 255, 255, 0.923);
-padding: 30px;
+#experience .exp_overlay {
+  background-color: rgba(255, 255, 255, 0.923);
+  padding: 30px;
 }
 #experience .exp_box {
   text-align: center;
@@ -235,73 +236,36 @@ padding: 30px;
   border-radius: 3px;
   margin: 20px 0;
   height: 500px;
+  transition: 0.4s;
 }
 
-#experience .exp_box img{
-    border-radius: 50%;
-    margin-bottom: 30px;
+#experience .exp_box:hover {
+  box-shadow: 4px 4px 7px 0px rgba(196, 196, 196, 0.75);
+  -webkit-box-shadow: 4px 4px 7px 0px rgba(196, 196, 196, 0.75);
+  -moz-box-shadow: 4px 4px 7px 0px rgba(196, 196, 196, 0.75);
 }
 
-#experience .exp_box .company{
-    font-size: 12px;
-}
-#experience .exp_box h6{
-    font-weight: 500;
-    padding: 15px 0;
-    font-size: 20px;
+#experience .exp_box img {
+  border-radius: 50%;
+  margin-bottom: 30px;
 }
 
-#experience .exp_box a{
-    color: var(--yellow);
-    font-weight: 500;
-    margin-top: 20px;
+#experience .exp_box .company {
+  font-size: 12px;
+}
+#experience .exp_box h6 {
+  font-weight: 500;
+  padding: 15px 0;
+  font-size: 20px;
 }
 
-/*gallery*/
-
-#gallery {
-  padding: 50px 0;
+#experience .exp_box a {
+  color: var(--yellow);
+  font-weight: 500;
+  margin-top: 20px;
 }
 
-#gallery .item {
-  margin: 0 10px;
-  height: 320px;
-}
-#gallery .item .img img {
-  width: 100%;
-  height: 100%;
-}
-
-#gallery .gallery-slide {
-  position: relative;
-}
-
-#gallery .gallery-slider i {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  color: white;
-  background: rgba(0, 0, 0, 0.6);
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#gallery .gallery-slider i.left {
-  position: absolute;
-  left: 0px;
-  z-index: 1;
-}
-
-#gallery .gallery-slider i.right {
-  position: absolute;
-  right: 0px;
-}
-
-/* end of gallery*/
-
-/*footr*/
+/*footer*/
 
 footer {
   background: #333;
@@ -404,4 +368,32 @@ footer .title {
 
 #footer_bottom p a {
   color: var(--yellow);
+}
+
+/* responsive */
+
+@media (max-width: 575px) {
+  #banner .banner_propic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid var(--yellow);
+    margin-bottom: 20px;
+  }
+
+  #banner .pro_info {
+    width: 320px;
+    padding: 12px;
+    border: 2px solid var(--yellow);
+    font-size: 12px;
+  }
+
+  #banner .pro_info .pro_title {
+    color: var(--yellow);
+    font-size: 28px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 14px;
+  }
 }
